@@ -36,7 +36,7 @@ Além disso, o projeto contará com uma seção de reviews e críticas, incluind
 O site será construído com foco no conteudo das aulas aplicando conceitos de responsividade e interatividade para proporcionar uma experiência clara e agradável em diferentes dispositivos.
 
 ## Print do erro do GitHub
-<img src="Prints/Erro Git HUB.png" alt="Erro GIt HUB"/>
+<img src="Prints/Erro GIT HUB.png" alt="Erro GIt HUB"/>
 
 ---
 
