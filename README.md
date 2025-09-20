@@ -43,3 +43,12 @@ O site será construído com foco no conteudo das aulas aplicando conceitos de r
 ## Print da home-page Responsividade CSS puro
 <img src="Prints/CSS PURO.png" alt="CSS PURO">
 
+## Print da home-page Versão 2.0 
+<img src="Prints/Versao 2.0.png" alt="Versao 2.0">
+
+
+
+
+
+
+
