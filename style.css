@@ -2,14 +2,14 @@
 
 :root{
   /* Paleta clara com roxo dominante */
-  --bg:#ffffff;            /* fundo principal (claro) */
-  --text:#0f172a;          /* texto principal (quase preto) */
-  --muted:#475569;         /* texto secundário */
-  --brand:#6d28d9;         /* roxo principal */
-  --brand-strong:#5b21b6;  /* roxo hover/foco */
-  --brand-soft:#ede9fe;    /* roxo bem claro para fundos */
-  --border:#e5e7eb;        /* bordas claras */
-  --card:#ffffff;          /* fundo de cartões/painéis */
+  --bg:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --brand:#6d28d9;
+  --brand-strong:#5b21b6;
+  --brand-soft:#ede9fe;
+  --border:#e5e7eb;
+  --card:#ffffff;
   --shadow:0 6px 24px rgba(2,6,23,.08);
   --radius:14px;
   --container:1100px;
@@ -36,16 +36,12 @@ body{
 
 .container{max-width:var(--container);margin:0 auto;padding:0 16px}
 
-/* =========================
-   TIPOGRAFIA
-   ========================= */
+/* TIPOGRAFIA */
 h1,h2,h3,h4{font-family:'Playfair Display',serif;color:#0b0f19}
 h2{text-align:center;margin:1.25rem 0}
 h3{margin:.5rem 0}
 
-/* =========================
-   HEADER
-   ========================= */
+/* HEADER */
 .site-header{
   background:#ffffffee;
   backdrop-filter:saturate(1.1) blur(4px);
@@ -88,17 +84,6 @@ h3{margin:.5rem 0}
 .search button:hover{background:var(--brand-strong)}
 @media(max-width:768px){.search{flex-basis:100%;justify-content:center}}
 
-/* =========================
-   SEÇÃO: NOVIDADES (1 col mobile / 2 cols desktop)
-   ========================= */
-#novidades{padding:24px 0}
-.two-col{
-  display:grid;gap:18px;grid-template-columns:1fr; /* mobile */
-}
-@media(min-width:768px){
-  .two-col{grid-template-columns:2fr 1fr}          /* desktop */
-}
-
 /* Cards / Painéis */
 .card{
   background:var(--card);
@@ -111,9 +96,7 @@ h3{margin:.5rem 0}
 .card p{color:var(--muted)}
 .img-fluid{width:100%;height:auto;border-radius:12px}
 
-/* =========================
-   GRID DE CARDS (opcional Top 5)
-   ========================= */
+/* GRID DE CARDS (se usar) */
 .grid-cards{display:grid;gap:14px;grid-template-columns:1fr}
 @media(min-width:768px){.grid-cards{grid-template-columns:repeat(3,1fr)}}
 .mini-card{
@@ -123,7 +106,7 @@ h3{margin:.5rem 0}
 .mini-card h4{color:#111827;margin-bottom:.25rem}
 .mini-card p{color:var(--muted)}
 
-/* ===== Top 5: legenda aparece no hover, imagem escurece ===== */
+/* Top 5: legenda aparece no hover, imagem escurece */
 #top5 .carousel-item{ position:relative; }
 #top5 .carousel-item img{
   display:block; width:100%; height:auto;
@@ -139,10 +122,10 @@ h3{margin:.5rem 0}
   backdrop-filter:blur(2px);
   opacity:0; transform:translateY(8px);
   transition:opacity .25s ease, transform .25s ease;
-  pointer-events:none;  /* evita clique bloquear os controles */
+  pointer-events:none;
 }
 
-/* ao passar o mouse ou focar com teclado */
+/* hover/focus mostra a legenda e escurece a imagem */
 #top5 .carousel-item:hover img,
 #top5 .carousel-item:focus-within img{
   filter:brightness(60%);
@@ -152,23 +135,20 @@ h3{margin:.5rem 0}
   opacity:1; transform:translateY(0);
 }
 
-/* mobile: sem hover — mostra a legenda sempre */
+/* mobile: sem hover — legenda sempre visível */
 @media (max-width: 767.98px){
   #top5 .hover-caption{ opacity:1; transform:none; }
   #top5 .carousel-item img{ filter:none; }
 }
 
-/* opcional: deixar a lista lateral ativa com seu roxo */
+/* lista lateral ativa em roxo */
 .list-group-item.active{
   background-color: var(--brand) !important;
   border-color: var(--brand) !important;
   color:#fff !important;
 }
 
-
-/* =========================
-   BOTÕES GENÉRICOS (se precisar)
-   ========================= */
+/* BOTÕES genéricos (além dos do Bootstrap) */
 .btn{
   display:inline-block;border-radius:10px;border:1px solid var(--border);
   padding:.55rem 1rem;text-decoration:none;color:#0f172a;background:#fff;
@@ -180,9 +160,7 @@ h3{margin:.5rem 0}
 }
 .btn-primary:hover{background:var(--brand-strong)}
 
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 .site-footer{
   border-top:1px solid var(--border);
   background:#fff;
@@ -196,11 +174,29 @@ h3{margin:.5rem 0}
 .footer-wrap .logo{font-size:1.2rem}
 .small{opacity:.8;font-size:.92rem}
 
-/* =========================
-   UTILITÁRIOS
-   ========================= */
+/* UTILITÁRIOS */
 .round{border-radius:999px}
 .shadow{box-shadow:var(--shadow)}
 .bg-brand-soft{background:var(--brand-soft)}
 .text-brand{color:var(--brand)}
 .border{border:1px solid var(--border)}
+
+/* HERO – texto alinhado e legível */
+#hero h1{
+  text-wrap: balance;
+  margin-bottom: .75rem;
+}
+#hero .hero-copy{
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  line-height: 1.85;
+  max-width: 62ch;
+}
+@media (max-width: 767.98px){
+  #hero .hero-copy{
+    text-align: left;
+    max-width: none;
+  }
+}

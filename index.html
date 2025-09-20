@@ -26,47 +26,81 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-wrap">
-      <!-- Se quiser trocar por imagem: <a class="logo" href="#"><img src="public/Imagens/Logo/Logo.png" alt="Logo CenaB" style="height:40px"></a> -->
-      <a class="logo" href="#">#CenaB</a>
+      <!-- Se quiser usar imagem em vez de texto: <a class="logo" href="#"><img src="public/Imagens/Logo/Logo.png" alt="Logo CenaB" style="height:40px"></a> -->
+      <a class="logo" href="#hero">#CenaB</a>
 
-      <nav class="nav" aria-label="principal">
-        <a href="#">Home</a>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#hero">Home</a>
         <a href="#novidades">Novidades</a>
         <a href="#destaque">Destaque</a>
         <a href="#top5">Top 5</a>
-        <a href="#reviews">Reviews</a>
+        <a href="#reviews">Reviews</a> <!-- seção será adicionada depois -->
       </nav>
 
       <form class="search" role="search">
         <label for="q" class="sr-only">Pesquisar</label>
         <input id="q" type="search" placeholder="Pesquisar…" />
-        <button type="submit">Buscar</button>
+        <button type="submit" aria-label="Buscar no site">Buscar</button>
       </form>
     </div>
   </header>
 
   <!-- Main -->
   <main id="conteudo">
-    <!-- Novidades: 1 coluna no mobile / 2 colunas no desktop -->
-    <section id="novidades" class="container">
-      <h2>Novidades da semana</h2>
 
-      <div class="two-col">
-        <!-- Esquerda -->
-        <div class="card">
-          <h3>Novidades</h3>
-          <p>
-            Uma nova série chegou nesta semana e já está dando o que falar. Com uma trama intensa, cheia de
-            reviravoltas e personagens marcantes, cada episódio mergulha o público em um universo de suspense e emoção.
-            Prepare-se para viver uma experiência única, onde nada é o que parece e cada detalhe pode mudar o rumo da
-            história.
-          </p>
+    <!-- HERO -->
+    <section id="hero" class="container py-5">
+      <div class="row align-items-center g-4">
+
+        <!-- Imagem -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+            <img src="public/Imagens/Hero/Hero001.jpg" alt="Colagem de capas de séries populares e alternativas" style="width:100%;height:100%;object-fit:cover;">
+          </div>
         </div>
 
-        <!-- Direita (Destaque) -->
-        <aside id="destaque" class="card" aria-label="Destaque">
-          <h3>Destaque</h3>
-          <p>Conteúdo em destaque. No desktop fica à direita; no mobile, vem abaixo.</p>
+        <!-- Texto + CTAs -->
+        <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 class="display-5 fw-bold mb-2">CenaB</h1>
+          <p class="lead hero-copy">
+            Sabe aquelas séries incríveis que não pipocam no topo dos streamings? O CenaB existe pra
+            garimpar justamente essas joias fora do radar. A gente faz curadoria independente (sem algoritmo
+            mandando em nada), com sinopses sem spoiler, notas rápidas e contexto suficiente pra você
+            decidir se vale dar play. Se curte boas histórias, personagens que ficam na cabeça e
+            aquela sensação de “onde essa série estava escondida?”, bem-vindo ao CenaB — sua bússola pra
+            sair da rota e achar coisa boa.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#top5" class="btn btn-primary btn-lg">Explorar Top 5</a>
+            <a href="#novidades" class="btn btn-outline-primary btn-lg">Ver novidades</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Novidades: 1 coluna no mobile / 2 colunas no desktop -->
+    <section id="novidades" class="container my-4">
+      <h2 class="text-center mb-3">De Olho na Cena</h2>
+
+      <div class="row g-3">
+        <div class="col-12 col-lg-8">
+          <div class="card h-100">
+            <h3>Novidades</h3>
+            <p>
+              Uma nova série chegou nesta semana e já está dando o que falar. Com uma trama intensa, cheia
+              de reviravoltas e personagens marcantes, cada episódio mergulha o público em um universo de
+              suspense e emoção. Prepare-se para viver uma experiência única, onde nada é o que parece e
+              cada detalhe pode mudar o rumo da história.
+            </p>
+          </div>
+        </div>
+
+        <aside id="destaque" class="col-12 col-lg-4" aria-label="Destaque">
+          <div class="card h-100">
+            <h3>Destaque</h3>
+            <p>Conteúdo em destaque. No desktop fica à direita; no mobile, vem abaixo.</p>
+          </div>
         </aside>
       </div>
     </section>
@@ -202,7 +236,7 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <a class="logo" href="#">#CenaB</a>
+      <a class="logo" href="#hero">#CenaB</a>
       <p class="small">Projeto acadêmico — PUC Minas. © 2025 CenaB.</p>
     </div>
   </footer>
