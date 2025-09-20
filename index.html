@@ -2,246 +2,386 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>CenaB</title>
-  <meta name="description" content="Home do CenaB — séries fora do radar com boas críticas." />
+    <title>CenaB</title>
+    <meta name="description" content="Home do CenaB — séries fora do radar com boas críticas." />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Seu CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Fontes Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+    <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-wrap">
-      <!-- Se quiser usar imagem em vez de texto: <a class="logo" href="#"><img src="public/Imagens/Logo/Logo.png" alt="Logo CenaB" style="height:40px"></a> -->
-      <a class="logo" href="#hero">#CenaB</a>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-wrap">
+            <!-- Se quiser usar imagem em vez de texto: <a class="logo" href="#"><img src="public/Imagens/Logo/Logo.png" alt="Logo CenaB" style="height:40px"></a> -->
+            <a class="logo" href="#hero">#CenaB</a>
 
-      <nav class="nav" aria-label="Menu principal">
-        <a href="#hero">Home</a>
-        <a href="#novidades">Novidades</a>
-        <a href="#destaque">Destaque</a>
-        <a href="#top5">Top 5</a>
-        <a href="#reviews">Reviews</a> <!-- seção será adicionada depois -->
-      </nav>
+            <nav class="nav" aria-label="Menu principal">
+                <a href="#hero">Home</a>
+                <a href="#novidades">Novidades</a>
+                <a href="#destaque">Destaque</a>
+                <a href="#top5">Top 5</a>
+                <a href="#reviews">Reviews</a> <!-- seção será adicionada depois -->
+            </nav>
 
-      <form class="search" role="search">
-        <label for="q" class="sr-only">Pesquisar</label>
-        <input id="q" type="search" placeholder="Pesquisar…" />
-        <button type="submit" aria-label="Buscar no site">Buscar</button>
-      </form>
-    </div>
-  </header>
-
-  <!-- Main -->
-  <main id="conteudo">
-
-    <!-- HERO -->
-    <section id="hero" class="container py-5">
-      <div class="row align-items-center g-4">
-
-        <!-- Imagem -->
-        <div class="col-12 col-lg-6 order-1 order-lg-2">
-          <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-            <img src="public/Imagens/Hero/Hero001.jpg" alt="Colagem de capas de séries populares e alternativas" style="width:100%;height:100%;object-fit:cover;">
-          </div>
+            <form class="search" role="search">
+                <label for="q" class="sr-only">Pesquisar</label>
+                <input id="q" type="search" placeholder="Pesquisar…" />
+                <button type="submit" aria-label="Buscar no site">Buscar</button>
+            </form>
         </div>
+    </header>
 
-        <!-- Texto + CTAs -->
-        <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 class="display-5 fw-bold mb-2">CenaB</h1>
-          <p class="lead hero-copy">
-            Sabe aquelas séries incríveis que não pipocam no topo dos streamings? O CenaB existe pra
-            garimpar justamente essas joias fora do radar. A gente faz curadoria independente (sem algoritmo
-            mandando em nada), com sinopses sem spoiler, notas rápidas e contexto suficiente pra você
-            decidir se vale dar play. Se curte boas histórias, personagens que ficam na cabeça e
-            aquela sensação de “onde essa série estava escondida?”, bem-vindo ao CenaB — sua bússola pra
-            sair da rota e achar coisa boa.
-          </p>
-          <div class="d-flex flex-wrap gap-2">
-            <a href="#top5" class="btn btn-primary btn-lg">Explorar Top 5</a>
-            <a href="#novidades" class="btn btn-outline-primary btn-lg">Ver novidades</a>
-          </div>
-        </div>
+    <!-- Main -->
+    <main id="conteudo">
 
-      </div>
-    </section>
+        <!-- HERO -->
+        <section id="hero" class="container py-5">
+            <div class="row align-items-center g-4">
 
-    <!-- Novidades: 1 coluna no mobile / 2 colunas no desktop -->
-    <section id="novidades" class="container my-4">
-      <h2 class="text-center mb-3">De Olho na Cena</h2>
+                <!-- Imagem -->
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+                        <img src="public/Imagens/Hero/Hero001.jpg"
+                            alt="Colagem de capas de séries populares e alternativas"
+                            style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                </div>
 
-      <div class="row g-3">
-        <div class="col-12 col-lg-8">
-          <div class="card h-100">
-            <h3>Novidades</h3>
-            <p>
-              Uma nova série chegou nesta semana e já está dando o que falar. Com uma trama intensa, cheia
-              de reviravoltas e personagens marcantes, cada episódio mergulha o público em um universo de
-              suspense e emoção. Prepare-se para viver uma experiência única, onde nada é o que parece e
-              cada detalhe pode mudar o rumo da história.
-            </p>
-          </div>
-        </div>
+                <!-- Texto + CTAs -->
+                <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1 class="display-5 fw-bold mb-2">CenaB</h1>
+                    <p class="lead hero-copy">
+                        Sabe aquelas séries incríveis que não pipocam no topo dos streamings? O CenaB existe pra
+                        garimpar justamente essas joias fora do radar. A gente faz curadoria independente (sem algoritmo
+                        mandando em nada), com sinopses sem spoiler, notas rápidas e contexto suficiente pra você
+                        decidir se vale dar play. Se curte boas histórias, personagens que ficam na cabeça e
+                        aquela sensação de “onde essa série estava escondida?”, bem-vindo ao CenaB — sua bússola pra
+                        sair da rota e achar coisa boa.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#top5" class="btn btn-primary btn-lg">Explorar Top 5</a>
+                        <a href="#novidades" class="btn btn-outline-primary btn-lg">Ver novidades</a>
+                    </div>
+                </div>
 
-        <aside id="destaque" class="col-12 col-lg-4" aria-label="Destaque">
-          <div class="card h-100">
-            <h3>Destaque</h3>
-            <p>Conteúdo em destaque. No desktop fica à direita; no mobile, vem abaixo.</p>
-          </div>
-        </aside>
-      </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Top 5 (Carrossel + lista lateral) -->
-    <section id="top5" class="container my-4">
-      <h2 class="text-center mb-3">Top 5</h2>
+        <!-- Novidades: 1 coluna no mobile / 2 colunas no desktop -->
+        <section id="novidades" class="container my-4">
+            <h2 class="text-center mb-3">De Olho na Cena</h2>
 
-      <div class="row g-4 align-items-start">
-        <!-- Carrossel (esquerda) -->
-        <div class="col-12 col-lg-8">
-          <div id="top5Carousel" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
-            <!-- Indicadores -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Black Sails"></button>
-              <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="1" aria-label="The Newsroom"></button>
-              <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="2" aria-label="Power"></button>
-              <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="3" aria-label="Billions"></button>
-              <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="4" aria-label="Lioness"></button>
+            <div class="row g-3">
+                <div class="col-12 col-lg-8">
+                    <div class="card h-100">
+                        <h3>Novidades</h3>
+                        <p>
+                            Uma nova série chegou nesta semana e já está dando o que falar. Com uma trama intensa, cheia
+                            de reviravoltas e personagens marcantes, cada episódio mergulha o público em um universo de
+                            suspense e emoção. Prepare-se para viver uma experiência única, onde nada é o que parece e
+                            cada detalhe pode mudar o rumo da história.
+                        </p>
+                    </div>
+                </div>
+
+                <aside id="destaque" class="col-12 col-lg-4" aria-label="Destaque">
+                    <div class="card h-100">
+                        <h3>Destaque</h3>
+                        <p>Conteúdo em destaque. No desktop fica à direita; no mobile, vem abaixo.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Top 5 (Carrossel + lista lateral) -->
+        <section id="top5" class="container my-4">
+            <h2 class="text-center mb-3">Top 5</h2>
+
+            <div class="row g-4 align-items-start">
+                <!-- Carrossel (esquerda) -->
+                <div class="col-12 col-lg-8">
+                    <div id="top5Carousel" class="carousel slide shadow rounded-4 overflow-hidden"
+                        data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Black Sails"></button>
+                            <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="1"
+                                aria-label="The Newsroom"></button>
+                            <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="2"
+                                aria-label="Power"></button>
+                            <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="3"
+                                aria-label="Billions"></button>
+                            <button type="button" data-bs-target="#top5Carousel" data-bs-slide-to="4"
+                                aria-label="Lioness"></button>
+                        </div>
+
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <!-- 1 -->
+                            <div class="carousel-item active" data-bs-interval="5000" tabindex="0">
+                                <img src="public/Imagens/Series/Black-Sails/Capa.jpg" class="d-block w-100"
+                                    alt="Capa da série Black Sails" loading="lazy" decoding="async">
+                                <div class="carousel-caption hover-caption">
+                                    <h5 class="mb-1">Black Sails</h5>
+                                    <p class="mb-0">Prequela de A Ilha do Tesouro; pirataria e política em 1715.</p>
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="carousel-item" data-bs-interval="5000" tabindex="0">
+                                <img src="public/Imagens/Series/The-Newsroom/Capa-The-Newsroom.jpg"
+                                    class="d-block w-100" alt="Capa da série The Newsroom" loading="lazy"
+                                    decoding="async">
+                                <div class="carousel-caption hover-caption">
+                                    <h5 class="mb-1">The Newsroom</h5>
+                                    <p class="mb-0">Bastidores de um telejornal buscando jornalismo com ética.</p>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="carousel-item" data-bs-interval="5000" tabindex="0">
+                                <img src="public/Imagens/Series/Power/Capa-Power.jpg" class="d-block w-100"
+                                    alt="Capa da série Power" loading="lazy" decoding="async">
+                                <div class="carousel-caption hover-caption">
+                                    <h5 class="mb-1">Power</h5>
+                                    <p class="mb-0">A vida dupla de James “Ghost” St. Patrick entre crime e negócios.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="carousel-item" data-bs-interval="5000" tabindex="0">
+                                <img src="public/Imagens/Series/Billions/Capa-Billions.jpg" class="d-block w-100"
+                                    alt="Capa da série Billions" loading="lazy" decoding="async">
+                                <div class="carousel-caption hover-caption">
+                                    <h5 class="mb-1">Billions</h5>
+                                    <p class="mb-0">Bobby Axelrod vs. Chuck Rhoades no xadrez do mercado financeiro.</p>
+                                </div>
+                            </div>
+
+                            <!-- 5 -->
+                            <div class="carousel-item" data-bs-interval="5000" tabindex="0">
+                                <img src="public/Imagens/Series/Lioness/Capa-Lioness.jpg" class="d-block w-100"
+                                    alt="Capa da série Lioness" loading="lazy" decoding="async">
+                                <div class="carousel-caption hover-caption">
+                                    <h5 class="mb-1">Lioness</h5>
+                                    <p class="mb-0">Espionagem, agentes infiltradas e dilemas morais.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#top5Carousel"
+                            data-bs-slide="prev" aria-label="Anterior">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#top5Carousel"
+                            data-bs-slide="next" aria-label="Próximo">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lista lateral (direita) -->
+                <div class="col-12 col-lg-4">
+                    <div class="list-group shadow-sm">
+                        <button type="button"
+                            class="list-group-item list-group-item-action d-flex align-items-center gap-3 active"
+                            data-bs-target="#top5Carousel" data-bs-slide-to="0" aria-current="true">
+                            <img src="public/Imagens/Series/Black-Sails/Capa.jpg" width="56" height="36" class="rounded"
+                                style="object-fit:cover" alt="">
+                            <div>
+                                <div class="fw-semibold">Black Sails</div>
+                                <small class="text-muted">Ação • Nota 8</small>
+                            </div>
+                        </button>
+
+                        <button type="button"
+                            class="list-group-item list-group-item-action d-flex align-items-center gap-3"
+                            data-bs-target="#top5Carousel" data-bs-slide-to="1">
+                            <img src="public/Imagens/Series/The-Newsroom/Capa-The-Newsroom.jpg" width="56" height="36"
+                                class="rounded" style="object-fit:cover" alt="">
+                            <div>
+                                <div class="fw-semibold">The Newsroom</div>
+                                <small class="text-muted">Drama • Nota 9</small>
+                            </div>
+                        </button>
+
+                        <button type="button"
+                            class="list-group-item list-group-item-action d-flex align-items-center gap-3"
+                            data-bs-target="#top5Carousel" data-bs-slide-to="2">
+                            <img src="public/Imagens/Series/Power/Capa-Power.jpg" width="56" height="36" class="rounded"
+                                style="object-fit:cover" alt="">
+                            <div>
+                                <div class="fw-semibold">Power</div>
+                                <small class="text-muted">Drama • Nota 9</small>
+                            </div>
+                        </button>
+
+                        <button type="button"
+                            class="list-group-item list-group-item-action d-flex align-items-center gap-3"
+                            data-bs-target="#top5Carousel" data-bs-slide-to="3">
+                            <img src="public/Imagens/Series/Billions/Capa-Billions.jpg" width="56" height="36"
+                                class="rounded" style="object-fit:cover" alt="">
+                            <div>
+                                <div class="fw-semibold">Billions</div>
+                                <small class="text-muted">Drama • Nota 10</small>
+                            </div>
+                        </button>
+
+                        <button type="button"
+                            class="list-group-item list-group-item-action d-flex align-items-center gap-3"
+                            data-bs-target="#top5Carousel" data-bs-slide-to="4">
+                            <img src="public/Imagens/Series/Lioness/Capa-Lioness.jpg" width="56" height="36"
+                                class="rounded" style="object-fit:cover" alt="">
+                            <div>
+                                <div class="fw-semibold">Lioness</div>
+                                <small class="text-muted">Suspense • Nota 9</small>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="reviews" class="container my-5">
+        <h2 class="text-center mb-4">Reviews</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+            <!-- 1 -->
+            <div class="col">
+                <article class="review-card card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9 review-thumb">
+                        <img src="https://i.ytimg.com/vi/P5op0PYBlI0/hqdefault.jpg" alt="Review de Black Sails">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5 card-title mb-1">Black Sails — Review</h3>
+                        <p class="card-text text-muted flex-grow-1 line-clamp-2">
+                            Ambientação histórica, pirataria e personagens intensos.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <span class="badge bg-light text-dark border">Ação</span>
+                            <a class="btn btn-outline-primary btn-sm" href="https://youtu.be/P5op0PYBlI0"
+                                target="_blank" rel="noopener">Assistir review</a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
-            <!-- Slides -->
-            <div class="carousel-inner">
-              <!-- 1 -->
-              <div class="carousel-item active" data-bs-interval="5000" tabindex="0">
-                <img src="public/Imagens/Series/Black-Sails/Capa.jpg" class="d-block w-100" alt="Capa da série Black Sails" loading="lazy" decoding="async">
-                <div class="carousel-caption hover-caption">
-                  <h5 class="mb-1">Black Sails</h5>
-                  <p class="mb-0">Prequela de A Ilha do Tesouro; pirataria e política em 1715.</p>
-                </div>
-              </div>
-
-              <!-- 2 -->
-              <div class="carousel-item" data-bs-interval="5000" tabindex="0">
-                <img src="public/Imagens/Series/The-Newsroom/Capa-The-Newsroom.jpg" class="d-block w-100" alt="Capa da série The Newsroom" loading="lazy" decoding="async">
-                <div class="carousel-caption hover-caption">
-                  <h5 class="mb-1">The Newsroom</h5>
-                  <p class="mb-0">Bastidores de um telejornal buscando jornalismo com ética.</p>
-                </div>
-              </div>
-
-              <!-- 3 -->
-              <div class="carousel-item" data-bs-interval="5000" tabindex="0">
-                <img src="public/Imagens/Series/Power/Capa-Power.jpg" class="d-block w-100" alt="Capa da série Power" loading="lazy" decoding="async">
-                <div class="carousel-caption hover-caption">
-                  <h5 class="mb-1">Power</h5>
-                  <p class="mb-0">A vida dupla de James “Ghost” St. Patrick entre crime e negócios.</p>
-                </div>
-              </div>
-
-              <!-- 4 -->
-              <div class="carousel-item" data-bs-interval="5000" tabindex="0">
-                <img src="public/Imagens/Series/Billions/Capa-Billions.jpg" class="d-block w-100" alt="Capa da série Billions" loading="lazy" decoding="async">
-                <div class="carousel-caption hover-caption">
-                  <h5 class="mb-1">Billions</h5>
-                  <p class="mb-0">Bobby Axelrod vs. Chuck Rhoades no xadrez do mercado financeiro.</p>
-                </div>
-              </div>
-
-              <!-- 5 -->
-              <div class="carousel-item" data-bs-interval="5000" tabindex="0">
-                <img src="public/Imagens/Series/Lioness/Capa-Lioness.jpg" class="d-block w-100" alt="Capa da série Lioness" loading="lazy" decoding="async">
-                <div class="carousel-caption hover-caption">
-                  <h5 class="mb-1">Lioness</h5>
-                  <p class="mb-0">Espionagem, agentes infiltradas e dilemas morais.</p>
-                </div>
-              </div>
+            <!-- 2 -->
+            <div class="col">
+                <article class="review-card card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9 review-thumb">
+                        <img src="https://i.ytimg.com/vi/QHy-Jg9Y6nM/hqdefault.jpg" alt="Review de The Newsroom">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5 card-title mb-1">The Newsroom — Review</h3>
+                        <p class="card-text text-muted flex-grow-1 line-clamp-2">
+                            Jornalismo, ética profissional e bastidores da TV.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <span class="badge bg-light text-dark border">Drama</span>
+                            <a class="btn btn-outline-primary btn-sm" href="https://www.youtube.com/watch?v=QHy-Jg9Y6nM"
+                                target="_blank" rel="noopener">Assistir review</a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
-            <!-- Controles -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#top5Carousel" data-bs-slide="prev" aria-label="Anterior">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#top5Carousel" data-bs-slide="next" aria-label="Próximo">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-          </div>
+            <!-- 3 -->
+            <div class="col">
+                <article class="review-card card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9 review-thumb">
+                        <img src="https://i.ytimg.com/vi/QrwASuv1UrQ/hqdefault.jpg" alt="Review de Power">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5 card-title mb-1">Power — Review</h3>
+                        <p class="card-text text-muted flex-grow-1 line-clamp-2">
+                            A vida dupla de James “Ghost” e seus conflitos.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <span class="badge bg-light text-dark border">Drama</span>
+                            <a class="btn btn-outline-primary btn-sm" href="https://www.youtube.com/watch?v=QrwASuv1UrQ"
+                                target="_blank" rel="noopener">Assistir review</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 4 -->
+            <div class="col">
+                <article class="review-card card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9 review-thumb">
+                        <img src="https://i.ytimg.com/vi/fHwP9rU2ke4/hqdefault.jpg" alt="Review de Billions">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5 card-title mb-1">Billions — Review</h3>
+                        <p class="card-text text-muted flex-grow-1 line-clamp-2">
+                            Poder, ambição e ética no mundo financeiro.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <span class="badge bg-light text-dark border">Drama</span>
+                            <a class="btn btn-outline-primary btn-sm" href="https://www.youtube.com/watch?v=fHwP9rU2ke4"
+                                target="_blank" rel="noopener">Assistir review</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 5 -->
+            <div class="col">
+                <article class="review-card card h-100 shadow-sm border-0">
+                    <div class="ratio ratio-16x9 review-thumb">
+                        <img src="https://i.ytimg.com/vi/qILXIACAS58/hqdefault.jpg" alt="Review de Lioness">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="h5 card-title mb-1">Lioness — Review</h3>
+                        <p class="card-text text-muted flex-grow-1 line-clamp-2">
+                            Espionagem, operações secretas e dilemas morais.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2">
+                            <span class="badge bg-light text-dark border">Suspense</span>
+                            <a class="btn btn-outline-primary btn-sm" href="https://www.youtube.com/watch?v=qILXIACAS58"
+                                target="_blank" rel="noopener">Assistir review</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
         </div>
-
-        <!-- Lista lateral (direita) -->
-        <div class="col-12 col-lg-4">
-          <div class="list-group shadow-sm">
-            <button type="button" class="list-group-item list-group-item-action d-flex align-items-center gap-3 active"
-              data-bs-target="#top5Carousel" data-bs-slide-to="0" aria-current="true">
-              <img src="public/Imagens/Series/Black-Sails/Capa.jpg" width="56" height="36" class="rounded" style="object-fit:cover" alt="">
-              <div>
-                <div class="fw-semibold">Black Sails</div>
-                <small class="text-muted">Ação • Nota 8</small>
-              </div>
-            </button>
-
-            <button type="button" class="list-group-item list-group-item-action d-flex align-items-center gap-3"
-              data-bs-target="#top5Carousel" data-bs-slide-to="1">
-              <img src="public/Imagens/Series/The-Newsroom/Capa-The-Newsroom.jpg" width="56" height="36" class="rounded" style="object-fit:cover" alt="">
-              <div>
-                <div class="fw-semibold">The Newsroom</div>
-                <small class="text-muted">Drama • Nota 9</small>
-              </div>
-            </button>
-
-            <button type="button" class="list-group-item list-group-item-action d-flex align-items-center gap-3"
-              data-bs-target="#top5Carousel" data-bs-slide-to="2">
-              <img src="public/Imagens/Series/Power/Capa-Power.jpg" width="56" height="36" class="rounded" style="object-fit:cover" alt="">
-              <div>
-                <div class="fw-semibold">Power</div>
-                <small class="text-muted">Drama • Nota 9</small>
-              </div>
-            </button>
-
-            <button type="button" class="list-group-item list-group-item-action d-flex align-items-center gap-3"
-              data-bs-target="#top5Carousel" data-bs-slide-to="3">
-              <img src="public/Imagens/Series/Billions/Capa-Billions.jpg" width="56" height="36" class="rounded" style="object-fit:cover" alt="">
-              <div>
-                <div class="fw-semibold">Billions</div>
-                <small class="text-muted">Drama • Nota 10</small>
-              </div>
-            </button>
-
-            <button type="button" class="list-group-item list-group-item-action d-flex align-items-center gap-3"
-              data-bs-target="#top5Carousel" data-bs-slide-to="4">
-              <img src="public/Imagens/Series/Lioness/Capa-Lioness.jpg" width="56" height="36" class="rounded" style="object-fit:cover" alt="">
-              <div>
-                <div class="fw-semibold">Lioness</div>
-                <small class="text-muted">Suspense • Nota 9</small>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <a class="logo" href="#hero">#CenaB</a>
-      <p class="small">Projeto acadêmico — PUC Minas. © 2025 CenaB.</p>
-    </div>
-  </footer>
 
-  <!-- Bootstrap JS (Bundle) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <a class="logo" href="#hero">#CenaB</a>
+            <p class="small">Projeto acadêmico — PUC Minas. © 2025 CenaB.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
