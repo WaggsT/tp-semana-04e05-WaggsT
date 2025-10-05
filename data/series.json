@@ -1,0 +1,67 @@
+[
+  {
+    "id": "black-sails",
+    "titulo": "Black Sails",
+    "ano": 2014,
+    "generos": ["Ação", "Aventura", "Drama"],
+    "nota": 8,
+    "sinopse": "Prequela de 'A Ilha do Tesouro': piratas, política e sobrevivência nas Bahamas de 1715.",
+    "plataformas": ["StarzPlay", "Prime Video (canal)"],
+    "capa": "public/Imagens/Series/Black-Sails/Capa.jpg",
+    "fotos": [
+      "public/Imagens/Series/Black-Sails/Capa.jpg"
+    ]
+  },
+  {
+    "id": "the-newsroom",
+    "titulo": "The Newsroom",
+    "ano": 2012,
+    "generos": ["Drama"],
+    "nota": 9,
+    "sinopse": "Bastidores de um telejornal que tenta resgatar ética e profundidade no jornalismo.",
+    "plataformas": ["HBO Max"],
+    "capa": "public/Imagens/Series/The-Newsroom/Capa-The-Newsroom.jpg",
+    "fotos": [
+      "public/Imagens/Series/The-Newsroom/Capa-The-Newsroom.jpg"
+    ]
+  },
+  {
+    "id": "power",
+    "titulo": "Power",
+    "ano": 2014,
+    "generos": ["Drama", "Crime"],
+    "nota": 9,
+    "sinopse": "James “Ghost” vive entre o crime e os negócios legais enquanto tenta mudar de vida.",
+    "plataformas": ["StarzPlay"],
+    "capa": "public/Imagens/Series/Power/Capa-Power.jpg",
+    "fotos": [
+      "public/Imagens/Series/Power/Capa-Power.jpg"
+    ]
+  },
+  {
+    "id": "billions",
+    "titulo": "Billions",
+    "ano": 2016,
+    "generos": ["Drama"],
+    "nota": 10,
+    "sinopse": "Promotor federal e bilionário se enfrentam no xadrez do mercado financeiro.",
+    "plataformas": ["Paramount+", "Globoplay (canais)"],
+    "capa": "public/Imagens/Series/Billions/Capa-Billions.jpg",
+    "fotos": [
+      "public/Imagens/Series/Billions/Capa-Billions.jpg"
+    ]
+  },
+  {
+    "id": "lioness",
+    "titulo": "Special Ops: Lioness",
+    "ano": 2023,
+    "generos": ["Suspense", "Ação"],
+    "nota": 9,
+    "sinopse": "Agentes infiltradas equilibram missões de alto risco e dilemas morais.",
+    "plataformas": ["Paramount+"],
+    "capa": "public/Imagens/Series/Lioness/Capa-Lioness.jpg",
+    "fotos": [
+      "public/Imagens/Series/Lioness/Capa-Lioness.jpg"
+    ]
+  }
+]

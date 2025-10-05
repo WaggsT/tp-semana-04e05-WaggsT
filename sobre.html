@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CenaB — Sobre</title>
+  <meta name="description" content="Entenda a ideia do CenaB e conheça quem criou o projeto." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html#hero">#CenaB</a>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#novidades">Novidades</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+      </nav>
+      <div class="search" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container py-5">
+
+    <!-- HERO: 2 colunas -->
+    <section class="section">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-6">
+          <p class="eyebrow">Sobre</p>
+          <h1 class="display-6 fw-bold mb-3">Sua bússola de séries fora do radar</h1>
+          <p class="lead hero-copy mb-3 about-hero">
+            O <strong>CenaB</strong> é um guia de <em>séries menos hypadas</em> — obras que talvez não
+            estejam no topo do streaming, mas merecem sua atenção. Curadoria independente, sinopses sem spoiler,
+            notas rápidas e contexto suficiente para você decidir se vale dar play.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="index.html#novidades" class="btn btn-primary btn-lg">Explorar séries</a>
+            <a href="index.html#novidades" class="btn btn-outline-primary btn-lg">Ver destaques</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
+            <img src="public/Imagens/Hero/Hero001.jpg" alt="Colagem de capas de séries" class="w-100 h-100"
+              style="object-fit:cover" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGIA (centralizada) -->
+    <section class="section">
+      <div class="section-header text-center">
+        <p class="eyebrow mb-1">Metodologia</p>
+        <h2 class="h4 m-0">Como curamos as séries</h2>
+      </div>
+      <div class="card about-card shadow-sm border-0 p-3 p-md-4">
+        <ul class="mb-0">
+          <li>Foco em qualidade narrativa e personagens memoráveis.</li>
+          <li>Seleção 100% humana, sem algoritmo mandando.</li>
+          <li>Sinopses curtas e sem spoiler.</li>
+          <li>Notas rápidas + contexto (gênero, ano, onde assistir).</li>
+          <li>Atualização contínua com novas descobertas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- AUTOR + TECNOLOGIAS DENTRO DO CARD -->
+    <section class="section">
+      <div class="section-header text-center">
+        <p class="eyebrow mb-1">Responsável</p>
+        <h2 class="h4 m-0">Quem fez o CenaB</h2>
+      </div>
+
+      <div class="row g-4 align-items-center justify-content-center">
+        <!-- Card com texto + contatos + tecnologias -->
+        <div class="col-12 col-lg-7">
+          <article class="card shadow-sm border-0 p-3 p-md-4 h-100">
+            <h3 class="h5 mb-2">Wagner Dante</h3>
+            <p class="mb-1 text-muted">Sistemas de Informação — PUC Minas</p>
+            <p class="mb-3">
+              Curadoria de séries menos hypadas, porém excelentes.
+            </p>
+            <p>O CenaB é um projeto acadêmico focado em descoberta e contexto.</p>
+
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <a class="btn btn-outline-primary btn-sm" href="https://github.com/WaggsT" target="_blank" rel="noopener">
+                <i class="bi bi-github me-1"></i> GitHub
+              </a>
+              <a class="btn btn-outline-secondary btn-sm" href="mailto:wagner.dante@pucminas.br">
+                <i class="bi bi-envelope me-1"></i> E-mail
+              </a>
+            </div>
+
+            <div class="subtle-hr"></div>
+
+            <h4 class="h6 mb-2">Tecnologias utilizadas</h4>
+            <div class="tech-list">
+              <span class="tech-chip"><i class="bi bi-filetype-html"></i> HTML5</span>
+              <span class="tech-chip"><i class="bi bi-filetype-css"></i> CSS3</span>
+              <span class="tech-chip"><i class="bi bi-filetype-js"></i> JavaScript</span>
+              <span class="tech-chip"><i class="bi bi-bootstrap-fill"></i> Bootstrap 5</span>
+              <span class="tech-chip"><i class="bi bi-github"></i> GitHub</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Foto ao lado -->
+        <div class="col-12 col-lg-4 text-center">
+          <img src="public/Imagens/Autor/foto.jpg" alt="Foto de Wagner Dante" class="author-photo"
+            loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center pt-2">
+      <a href="index.html#hero" class="btn btn-outline-primary btn-lg">Voltar para a Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <a class="logo" href="index.html#hero">#CenaB</a>
+      <div class="footer-info">
+        <p class="mb-1">Projeto acadêmico — PUC Minas.</p>
+        <p class="small mb-0">© 2025 CenaB. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
